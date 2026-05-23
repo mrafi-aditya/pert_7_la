@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Adit",
+    "score": 10209,
+    "bugs": 15,
+    "seconds": 16
+  },
+  {
+    "name": "Muhammad",
+    "score": 7712,
+    "bugs": 14,
+    "seconds": 19
+  },
+  {
+    "name": "Bayu",
+    "score": 4489,
+    "bugs": 7,
+    "seconds": 14
+  },
+  {
+    "name": "Rama",
+    "score": 3093,
+    "bugs": 9,
+    "seconds": 14
+  },
+  {
+    "name": "Rafi",
+    "score": 935,
+    "bugs": 3,
+    "seconds": 12
+  },
+  {
+    "name": "Azra",
+    "score": 107,
+    "bugs": 2,
+    "seconds": 9
+  }
+]

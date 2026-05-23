@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loading Skripsi: Anti Bug Edition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="page">
+        <section class="panel intro">
+            <p class="eyebrow">Muhammad Rafi Aditya - 51422107</p>
+            <h1>Loading Skripsi</h1>
+            <p>
+                Jaga progress skripsi sampai 100%. Klik bug sebelum mereka menabrak loading bar.
+                Klik kopi untuk bonus progress. Kalau stres mencapai 100%, game selesai.
+            </p>
+            <div class="form-row">
+                <input id="playerName" maxlength="16" placeholder="Nama player" value="Pejuang Skripsi">
+                <button id="startBtn">Mulai Game</button>
+            </div>
+        </section>
+
+        <section class="panel game-card">
+            <div class="hud">
+                <div>
+                    <span>Progress</span>
+                    <strong id="progressText">0%</strong>
+                </div>
+                <div>
+                    <span>Stres</span>
+                    <strong id="stressText">0%</strong>
+                </div>
+                <div>
+                    <span>Skor</span>
+                    <strong id="scoreText">0</strong>
+                </div>
+                <div>
+                    <span>Bug dibasmi</span>
+                    <strong id="bugText">0</strong>
+                </div>
+            </div>
+
+            <canvas id="gameCanvas" width="900" height="520" aria-label="Area game"></canvas>
+
+            <div id="messageBox" class="message-box">
+                <h2 id="messageTitle">Siap?</h2>
+                <p id="messageText">Klik mulai untuk menjaga loading skripsi.</p>
+            </div>
+        </section>
+
+        <section class="panel leaderboard">
+            <div class="leaderboard-title">
+                <h2>Leaderboard Lokal</h2>
+                <button id="refreshBtn" class="secondary">Refresh</button>
+            </div>
+            <ol id="scoreList"></ol>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>
